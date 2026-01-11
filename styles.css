@@ -1,0 +1,695 @@
+:root {
+  --ink: #0f0f0f;
+  --muted: rgba(0,0,0,.65);
+  --border: rgba(0,0,0,.16);
+  --bg: #ffffff;
+  --max: 1120px;
+  --green: #0b6b55;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+a { color: inherit; }
+
+strong {
+  color: var(--green);
+  font-weight: 700;
+}
+
+
+/* ---------------------- */
+/* TOP NAV (Monica style) */
+/* ---------------------- */
+.top {
+  padding: 26px 0 10px;
+}
+
+.topnav {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
+.topnav__link {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+}
+
+.topnav__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  color: var(--green)
+}
+
+.topnav__link.is-active {
+  text-decoration: underline;
+  color: var(--green);
+  text-underline-offset: 6px;
+}
+
+/* ---------------------- */
+/* HERO LAYOUT            */
+/* ---------------------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 80px;
+  align-items: center;
+  padding: 70px 0 70px;
+  justify-content: center;
+}
+
+.heroName {
+  margin: 0 0 26px;
+  font-size: clamp(10px, 4vw, 50px);
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.heroIntro {
+  margin: 0 0 18px;
+  font-size: clamp(5px, 2.2vw, 20px);
+  line-height: 1.35;
+  max-width: 50ch;
+  color: rgba(0,0,0,.82);
+  text-align: justify;  
+  margin-top: 50px;
+}
+
+.heroIntro strong {
+  font-weight: 900;
+}
+
+.heroLinks {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 30px 0 22px;
+}
+
+
+/* small “pill” links (not nav; just for GitHub/LinkedIn/Email) */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: var(--green);
+  color: white;
+}
+
+.pill:hover {
+  background: rgba(0, 0, 0, 0.04);
+  color: black;
+}
+
+/* Body text */
+.prose {
+  max-width: 72ch;
+  font-size: 15px;
+  line-height: 1.85;
+  color: rgba(0,0,0,.78);
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.prose p { margin: 0 0 16px; }
+
+/* ---------------------- */
+/* RIGHT: Image/art block */
+/* ---------------------- */
+.heroRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  max-width: 520px;
+  margin-top: -380px;
+}
+
+.heroLeft {
+  max-width: 520px;
+}
+
+
+.artFrame {
+  width: min(100, 100%);
+  aspect-ratio: 3/4;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  background: #f3f3f3;
+}
+
+.artImg {
+  width: 300px;
+  height: 410px;
+  display: block;
+  object-fit: cover;
+}
+
+.artCaption {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.linkBtn {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  margin-right: 6px;
+}
+
+.linkBtn:hover { opacity: 0.85; }
+
+/* ---------------------- */
+/* FOOTER                 */
+/* ---------------------- */
+.footer {
+  padding: 32px 0 40px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.muted { color: var(--muted); }
+
+/* ---------------------- */
+/* RESPONSIVE             */
+/* ---------------------- */
+@media (max-width: 900px) {
+  .topnav { gap: 18px; }
+  .topnav__link { font-size: 18px; }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 40px 0 60px;
+  }
+
+  .heroIntro { max-width: 40ch; }
+  .artCaption { font-size: 18px; }
+}
+
+/* ---------- Projects page ---------- */
+
+.page {
+  padding: 50px 0 70px;
+}
+
+/* Big page title like the hero vibe */
+.pageTitleBig {
+  margin: 0 0 12px;
+  font-size: clamp(10px, 4vw, 50px);
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.pageSubtitle {
+  margin: 0 0 34px;
+  font-size: 18px;
+  color: rgba(0,0,0,.70);
+  max-width: 80ch;
+}
+
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Clean “row cards” (not a 3-column grid) */
+.projectCard {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 18px 16px;
+  background: rgba(255,255,255,.6);
+}
+
+.projectTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.projectTitle {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 800;
+}
+
+.projectLinks a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.projectDesc {
+  margin: 10px 0 12px;
+  color: rgba(0,0,0,.78);
+  line-height: 1.7;
+  max-width: 80ch;
+  text-align: justify;
+}
+
+/* tag container */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* individual tag */
+.tag {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.05);
+  border: 1px solid rgba(0,0,0,.12);
+  white-space: nowrap;
+}
+
+
+/* mobile */
+@media (max-width: 900px) {
+  .page { padding: 36px 0 60px; }
+}
+
+/* ---------- Timeline (Experience + Education) ---------- */
+
+.divider {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 46px 0;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.tItem {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.tLine {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.tLine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(0,0,0,.10);
+  border-radius: 999px;
+}
+
+.tDot {
+  width: 12px;
+  height: 12px;
+  background: var(--green);
+  border-radius: 50%;
+  border: 3px solid color-mix(in oklab, var(--green) 20%, white);
+  margin-top: 16px;
+  z-index: 2;
+}
+
+.tCard {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 18px 16px;
+  background: rgba(255,255,255,.6);
+}
+
+.tTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.tRole {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.tMeta {
+  margin: 6px 0 0;
+  color: rgba(0,0,0,.70);
+  font-weight: 600;
+}
+
+.tDate {
+  margin: 0;
+  color: rgba(0,0,0,.65);
+  font-weight: 800;
+}
+
+.tBullets {
+  margin: 12px 0 12px;
+  padding-left: 18px;
+  color: rgba(0,0,0,.78);
+  line-height: 1.7;
+}
+
+.tBullets li { margin: 6px 0; }
+
+/* Use your tags + tag styles already */
+.tags { margin-top: 10px; }
+
+/* ---------- Achievements dot timeline ---------- */
+
+.dotTimeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+  margin-top: 18px;
+  padding-top: 20px;
+}
+
+.dotTrack {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 34px;
+  height: 2px;
+  background: rgba(0,0,0,.12);
+  border-radius: 999px;
+}
+
+.dotItem {
+  position: relative;
+  text-align: center;
+  padding: 0 6px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background: var(--green);
+  border-radius: 50%;
+  display: inline-block;
+  border: 3px solid color-mix(in oklab, var(--green) 20%, white);
+  margin-bottom: 10px;
+  z-index: 2;
+  position: relative;
+}
+
+.dotDate {
+  margin: 0;
+  font-weight: 900;
+  color: rgba(0,0,0,.75);
+}
+
+.dotText {
+  margin: 8px 0 0;
+  color: rgba(0,0,0,.78);
+  line-height: 1.5;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .tItem { grid-template-columns: 22px 1fr; }
+  .dotTimeline { grid-template-columns: 1fr; }
+  .dotTrack { display: none; }
+  .dotItem { text-align: left; }
+}
+
+.workSamples {
+  margin-top: 12px;
+}
+
+.workSamples__summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.workSamples__list {
+  margin-top: 8px;
+  padding-left: 18px;
+}
+
+.workSamples__meta {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-top: 2px;
+}
+
+.workSamples__note {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* ---------- Selected Work (distinct layout) ---------- */
+
+.workCollection {
+  margin-top: 34px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.workCollection:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.workCollection__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.workCollection__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.workCollection__subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 600;
+  max-width: 70ch;
+}
+
+/* Two-column “artifact shelf” */
+.tileGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* Compact tiles (different from projectCard + tCard) */
+.workTile {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 14px 12px;
+  background: rgba(255,255,255,.55);
+}
+
+.workTile__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.workTile__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.workTile__meta {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* Link row feels lighter than projectLinks */
+.workTile__links {
+  margin: 10px 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  font-weight: 800;
+}
+
+.workTile__links a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.workTile__blurb {
+  margin: 0 0 10px;
+  color: rgba(0,0,0,.78);
+  line-height: 1.65;
+}
+
+/* Expandable details to prevent crowding */
+.workTile__details summary {
+  cursor: pointer;
+  font-weight: 800;
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin: 6px 0 8px;
+}
+
+.workTile__details ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: rgba(0,0,0,.78);
+  line-height: 1.65;
+}
+
+.workTile .tags { margin-top: 8px; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .tileGrid { grid-template-columns: 1fr; }
+}
+
+/* Achievements – category buckets, no cards */
+.achvGrid {
+  display: grid;
+  gap: 28px 40px;
+}
+
+/* two columns on bigger screens */
+@media (min-width: 900px) {
+  .achvGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ---------- Achievements layout ---------- */
+
+.achSection {
+  margin-top: 34px;
+}
+
+.achSection__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.achSection__subtitle {
+  margin: 4px 0 14px;
+  color: var(--muted);
+  font-weight: 600;
+  max-width: 70ch;
+}
+
+/* List of achievements under each category */
+.achList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--border);
+}
+
+.achItem {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.achYear {
+  font-weight: 800;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.achText {
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgba(0,0,0,.82);
+  text-align: justify;
+}
+
+/* Mobile: stack year above text */
+@media (max-width: 700px) {
+  .achItem {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .achYear {
+    font-size: 12px;
+  }
+}

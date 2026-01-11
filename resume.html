@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title><a href = "https://docs.google.com/document/d/1w3G13aVsM3dKi_EEQuwqIwq8H1zgzvcIvcrjjgHaOG4/edit?usp=sharing">Sayee Sanjana Naresh Kumar | Resume</a></title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="index.html"><span class="brand__dot"></span><span class="brand__text">Your Name</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a class="topnav__link" href="index.html">Home</a>
+        <a class="topnav__link" href="projects.html">Projects</a>
+        <a class="topnav__link" href="experience.html">Experience</a>
+        <a class="topnav__link is-active" href="achievements.html">Achievements</a>
+        <a class="topnav__link" href="https://docs.google.com/document/d/1w3G13aVsM3dKi_EEQuwqIwq8H1zgzvcIvcrjjgHaOG4/edit?usp=sharing">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="wrap">
+      <h1 class="pageTitle">Resume</h1>
+      <p class="subtitle">Quick technical overview</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Languages</h3>
+          <p class="muted">Python, Java, C/C++, JavaScript…</p>
+        </div>
+        <div class="card">
+          <h3>Frameworks / Tools</h3>
+          <p class="muted">React, Node, Git, Docker, Linux…</p>
+        </div>
+        <div class="card">
+          <h3>Concepts</h3>
+          <p class="muted">DSA, databases, OS, networking, security…</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="wrap footer__inner"><p class="muted">© <span id="year"></span> Your Name</p></div></footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
