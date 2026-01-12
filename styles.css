@@ -31,10 +31,7 @@ strong {
   font-weight: 700;
 }
 
-
-/* ---------------------- */
-/* TOP NAV (Monica style) */
-/* ---------------------- */
+/*Navbar styles */
 .top {
   padding: 26px 0 10px;
 }
@@ -65,9 +62,7 @@ strong {
   text-underline-offset: 6px;
 }
 
-/* ---------------------- */
-/* HERO LAYOUT            */
-/* ---------------------- */
+/*Layout style*/
 .hero {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
@@ -107,7 +102,7 @@ strong {
 }
 
 
-/* small “pill” links (not nav; just for GitHub/LinkedIn/Email) */
+/* small pill links (not nav; just for GitHub/LinkedIn/Email) */
 .pill {
   display: inline-flex;
   align-items: center;
@@ -139,16 +134,13 @@ strong {
 
 .prose p { margin: 0 0 16px; }
 
-/* ---------------------- */
-/* RIGHT: Image/art block */
-/* ---------------------- */
+/*For Sayee image*/
 .heroRight {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 18px;
   max-width: 520px;
-  margin-top: -380px;
 }
 
 .heroLeft {
@@ -157,7 +149,8 @@ strong {
 
 
 .artFrame {
-  width: min(100, 100%);
+  width: 100%;
+  max-width: 420px;
   aspect-ratio: 3/4;
   border-radius: 12px;
   border: 1px solid var(--border);
@@ -166,8 +159,8 @@ strong {
 }
 
 .artImg {
-  width: 300px;
-  height: 410px;
+  width: 100%;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
@@ -194,9 +187,7 @@ strong {
 
 .linkBtn:hover { opacity: 0.85; }
 
-/* ---------------------- */
-/* FOOTER                 */
-/* ---------------------- */
+/*footer*/
 .footer {
   padding: 32px 0 40px;
 }
@@ -208,22 +199,38 @@ strong {
 
 .muted { color: var(--muted); }
 
-/* ---------------------- */
-/* RESPONSIVE             */
-/* ---------------------- */
-@media (max-width: 900px) {
+/* responsive */
+@media (max-width: 700px) {
   .topnav { gap: 18px; }
   .topnav__link { font-size: 18px; }
 
   .hero {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;  
     gap: 36px;
     padding: 40px 0 60px;
   }
 
-  .heroIntro { max-width: 40ch; }
+  .heroLeft {
+    order: 1;
+    max-width: none;
+  }
+
+  .heroRight {
+    order: 2;
+    margin-top: 0;      
+    max-width: none;
+  }
+
+  .heroIntro { max-width: 40ch; margin-top: 20px; }
   .artCaption { font-size: 18px; }
+
+  .artFrame { max-width: 100%; }
+  .artImg { height: auto; }
+
+  /* Footer stack */
+  .footer__inner { flex-direction: column; gap: 8px; align-items: center; }
 }
+
 
 /* ---------- Projects page ---------- */
 
@@ -318,6 +325,17 @@ strong {
 /* mobile */
 @media (max-width: 900px) {
   .page { padding: 36px 0 60px; }
+}
+
+/* Very small screens / phones */
+@media (max-width: 480px) {
+  .wrap { padding: 0 16px; }
+  .topnav__link { font-size: 16px; padding: 8px 6px; }
+  .pill { padding: 8px 12px; font-size: 13px; }
+  .hero { padding: 28px 0 36px; gap: 28px; }
+  .heroIntro { font-size: 14px; max-width: 36ch; }
+  .prose { font-size: 14px; }
+  .artFrame { max-width: 360px; }
 }
 
 /* ---------- Timeline (Experience + Education) ---------- */
@@ -501,7 +519,7 @@ strong {
   opacity: 0.7;
 }
 
-/* ---------- Selected Work (distinct layout) ---------- */
+/*Selected Work */
 
 .workCollection {
   margin-top: 34px;
@@ -596,7 +614,7 @@ strong {
   line-height: 1.65;
 }
 
-/* Expandable details to prevent crowding */
+/* 
 .workTile__details summary {
   cursor: pointer;
   font-weight: 800;
@@ -615,25 +633,23 @@ strong {
 
 .workTile .tags { margin-top: 8px; }
 
-/* Responsive */
 @media (max-width: 900px) {
   .tileGrid { grid-template-columns: 1fr; }
 }
 
-/* Achievements – category buckets, no cards */
 .achvGrid {
   display: grid;
   gap: 28px 40px;
 }
 
-/* two columns on bigger screens */
 @media (min-width: 900px) {
   .achvGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+*/
 
-/* ---------- Achievements layout ---------- */
+/* Achievements layout */
 
 .achSection {
   margin-top: 34px;
