@@ -21,29 +21,133 @@
   </header>
 
   <main class="wrap page">
+
     <header class="pageHead">
       <h1 class="pageTitleBig">Projects</h1>
-      <p class="pageSubtitle">This section features a curated selection of my work, showcasing my skills and capabilities.</p>
+      <p class="pageSubtitle">
+        A selection of projects spanning artificial intelligence, machine learning,
+        data visualization, software engineering, accessibility, and systems.
+      </p>
     </header>
 
     <section class="projectsList" aria-label="Projects">
+
+
+      <!-- VizWiz Salient Object Detection -->
+      <article class="projectCard">
+        <div class="projectTop">
+          <h2 class="projectTitle">
+            VizWiz Salient Object Detection for Visual Accessibility
+          </h2>
+
+          <div class="projectLinks">
+            <a
+              href="https://github.com/sayeenaresh/vizwiz-salient-object-detection"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <ul class="projectDesc">
+          <li>
+            Developed a deep learning pipeline for salient object detection using
+            the VizWiz dataset, which contains real-world images captured by blind
+            and low-vision users under challenging conditions such as motion blur,
+            poor lighting, cluttered backgrounds, and off-center objects.
+          </li>
+
+          <li>
+            Implemented a U-Net encoder-decoder segmentation architecture in PyTorch
+            to generate pixel-level binary masks separating visually salient objects
+            from image backgrounds.
+          </li>
+
+          <li>
+            Built an image preprocessing pipeline that converts polygon-based VizWiz
+            annotations into binary segmentation masks using OpenCV and prepares
+            images and masks for model training at 256 × 256 resolution.
+          </li>
+
+          <li>
+            Evaluated model configurations across batch size, optimizer, learning
+            rate, and feature-size experiments to analyze their effects on training
+            behavior and validation performance.
+          </li>
+
+          <li>
+            Explored future extensions including attention mechanisms, pretrained
+            vision backbones, multi-scale feature extraction, and vision-language
+            models for richer assistive visual understanding.
+          </li>
+        </ul>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Computer Vision</span>
+          <span class="tag">Deep Learning</span>
+          <span class="tag">U-Net</span>
+          <span class="tag">Image Segmentation</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">NumPy</span>
+          <span class="tag">Matplotlib</span>
+          <span class="tag">Google Colab</span>
+          <span class="tag">Accessibility</span>
+        </div>
+      </article>
+
+
+      <!-- CapTech -->
       <article class="projectCard">
         <div class="projectTop">
           <h2 class="projectTitle">Elevate: Cap Air Project</h2>
+
           <div class="projectLinks">
-            <a href="https://drive.google.com/file/d/188J0tq10xT8-nxb47hLPAchcEpt4yJip/view?usp=sharing" target="_blank" rel="noreferrer">Final Presentation</a>
+            <a
+              href="https://drive.google.com/file/d/188J0tq10xT8-nxb47hLPAchcEpt4yJip/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Final Presentation
+            </a>
+
             <span aria-hidden="true">·</span>
-            <a href="https://drive.google.com/file/d/1JGCyStx4WyEmDO2aSdv3lZGIxYM89yJW/view?usp=sharing" target="_blank" rel="noreferrer">Final Website</a>
+
+            <a
+              href="https://drive.google.com/file/d/1JGCyStx4WyEmDO2aSdv3lZGIxYM89yJW/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Final Website
+            </a>
           </div>
         </div>
-        <p>
-          <ul class = "projectDesc">
-            <li>Designed and presented a comprehensive digital strategy for a mock airline client (Cap Air) during my Summer 2025 internship at CapTech Consulting.</li>
-            <li>Addressed usability, branding, and operational inefficiencies in the customer booking experience.</li>
-            <li>Delivered a redesigned web platform and data-driven recommendations using dashboards and financial analysis to improve customer experience, support decision-making, and optimize revenue and on-time performance.</li>
-            <li>Created a functional, AI-powered chatbot using AWS Bedrock to enhance customer service and engagement on the airline's website.</li>
-          </ul>
-        </p>
+
+        <ul class="projectDesc">
+          <li>
+            Designed and presented a comprehensive digital strategy for a mock
+            airline client, Cap Air, during my Summer 2025 internship at CapTech Consulting.
+          </li>
+
+          <li>
+            Addressed usability, branding, and operational inefficiencies across
+            the customer booking experience.
+          </li>
+
+          <li>
+            Developed a redesigned web platform and data-driven recommendations
+            using dashboards and financial analysis to improve customer experience,
+            decision-making, revenue, and on-time performance.
+          </li>
+
+          <li>
+            Created a functional AI-powered customer support chatbot using AWS
+            Bedrock and integrated it into the airline's digital experience.
+          </li>
+        </ul>
 
         <div class="tags">
           <span class="tag">Python</span>
@@ -59,27 +163,136 @@
           <span class="tag">NoSQL</span>
           <span class="tag">Docker</span>
         </div>
-
       </article>
 
+
+      <!-- Michelin Guide Visualization -->
       <article class="projectCard">
         <div class="projectTop">
-          <h2 class="projectTitle">ATM & Bank System: Secure Protocol Design</h2>
+          <h2 class="projectTitle">
+            The Geography of Taste: Michelin Guide Visualization
+          </h2>
+
           <div class="projectLinks">
-            <a href="https://github.com/sayeenaresh/ATM-Bank-System.git" target="_blank" rel="noreferrer">GitHub</a>
+            <a
+              href="https://github.com/sayeenaresh/CMSC471FinalProject"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+
             <span aria-hidden="true">·</span>
-            <a href="https://drive.google.com/file/d/1TokBYR7KB8Clr-1eshxbBrOLPX1qQBea/view?usp=sharing" target="_blank" rel="noreferrer">Design Document</a>
-            <span aria-hidden="true">·</span>
-            <a href="https://drive.google.com/file/d/1fjjQ0PnILlobm2GRugnohXTa8pMYWDqq/view?usp=sharing" target="_blank" rel="noreferrer">Adversarial Testing Document</a>
+
+            <a
+              href="https://purva-c.github.io/CMSC471FinalProject/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
           </div>
         </div>
 
-        <p>
-          <ul class="projectDesc">
-            <li>Designed and implemented a secure ATM and banking system in a group of two, including a custom communication protocol between ATM and bank services, with user authentication and balance management handled server-side.</li>
-            <li>Evaluated system reliability and security by participating in adversarial testing against other teams' implementations, identifying vulnerabilities and strengthening protocol robustness.</li>
-          </ul>
-        </p>
+        <ul class="projectDesc">
+          <li>
+            Built an interactive data visualization exploring geographic and
+            socioeconomic patterns in Michelin Guide restaurant coverage across
+            19,036 restaurant listings in 45 countries.
+          </li>
+
+          <li>
+            Developed interactive geographic visualizations using D3.js and
+            Leaflet.js, including a global restaurant map with marker clustering
+            and choropleth views highlighting disparities in Michelin coverage.
+          </li>
+
+          <li>
+            Created scroll-driven visual storytelling with Scrollama and a
+            beeswarm visualization examining relationships between restaurant
+            price tiers and Michelin award levels.
+          </li>
+
+          <li>
+            Analyzed per-capita restaurant coverage and regional patterns to
+            examine how Michelin's geographic reach reflects historical
+            European-centric expansion and leaves many global culinary traditions
+            underrepresented.
+          </li>
+
+          <li>
+            Collaborated on data collection, visualization design, implementation,
+            responsive UI/UX, accessibility considerations, and narrative structure
+            through collaborative development and pair programming.
+          </li>
+        </ul>
+
+        <div class="tags">
+          <span class="tag">D3.js</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Leaflet.js</span>
+          <span class="tag">Scrollama</span>
+          <span class="tag">TopoJSON</span>
+          <span class="tag">Geospatial Visualization</span>
+          <span class="tag">Data Visualization</span>
+          <span class="tag">Interactive Storytelling</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+      </article>
+
+
+      <!-- ATM / Bank System -->
+      <article class="projectCard">
+        <div class="projectTop">
+          <h2 class="projectTitle">
+            ATM & Bank System: Secure Protocol Design
+          </h2>
+
+          <div class="projectLinks">
+            <a
+              href="https://github.com/sayeenaresh/ATM-Bank-System.git"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+
+            <span aria-hidden="true">·</span>
+
+            <a
+              href="https://drive.google.com/file/d/1TokBYR7KB8Clr-1eshxbBrOLPX1qQBea/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Design Document
+            </a>
+
+            <span aria-hidden="true">·</span>
+
+            <a
+              href="https://drive.google.com/file/d/1fjjQ0PnILlobm2GRugnohXTa8pMYWDqq/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Adversarial Testing Document
+            </a>
+          </div>
+        </div>
+
+        <ul class="projectDesc">
+          <li>
+            Designed and implemented a secure ATM and banking system in a group of
+            two, including a custom communication protocol between ATM and bank
+            services, user authentication, and server-side balance management.
+          </li>
+
+          <li>
+            Evaluated system reliability and security through adversarial testing
+            against other teams' implementations, identifying vulnerabilities and
+            strengthening protocol robustness.
+          </li>
+        </ul>
 
         <div class="tags">
           <span class="tag">C</span>
@@ -93,100 +306,200 @@
         </div>
       </article>
 
+
+      <!-- Haptic Belt -->
       <article class="projectCard">
-  <div class="projectTop">
-    <h2 class="projectTitle">Haptic Belt for Directional Sound Awareness</h2>
-    <div class="projectLinks">
-      <a href="https://drive.google.com/file/d/1LmqQoj7Nk8aJr99wq92ozXjQB7GkDN_1/view?usp=sharing" target="_blank" rel="noreferrer">Final Presentation</a>
-      <span aria-hidden="true">·</span>
-      <a href="https://drive.google.com/file/d/1p0oZtyJyEb0RX-4FDxhyTI9I6T4arpei/view?usp=sharing" target="_blank" rel="noreferrer">Final Report</a>
-    </div>
-  </div>
+        <div class="projectTop">
+          <h2 class="projectTitle">
+            Haptic Belt for Directional Sound Awareness
+          </h2>
 
-  <ul class="projectDesc">
-    <li>Designed an assistive wearable device to help individuals with hearing impairments perceive environmental sounds through directional haptic feedback.</li>
-    <li>Evaluated usability, comfort, and accuracy through structured user testing with noise-canceling conditions and participant interviews.</li>
-    <li>Analyzed limitations related to wearability, battery life, and hardware constraints, and proposed future improvements including AI-driven prioritization of sound events.</li>
-  </ul>
+          <div class="projectLinks">
+            <a
+              href="https://drive.google.com/file/d/1LmqQoj7Nk8aJr99wq92ozXjQB7GkDN_1/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Final Presentation
+            </a>
 
-  <div class="tags">
-    <span class="tag">Human-Computer Interaction</span>
-    <span class="tag">Assistive Technology</span>
-    <span class="tag">Wearable Systems</span>
-    <span class="tag">Arduino</span>
-    <span class="tag">Embedded Systems</span>
-    <span class="tag">User Research</span>
-    <span class="tag">Accessibility</span>
-  </div>
-</article>
+            <span aria-hidden="true">·</span>
+
+            <a
+              href="https://drive.google.com/file/d/1p0oZtyJyEb0RX-4FDxhyTI9I6T4arpei/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Final Report
+            </a>
+          </div>
+        </div>
+
+        <ul class="projectDesc">
+          <li>
+            Designed an assistive wearable device to help individuals with hearing
+            impairments perceive environmental sounds through directional haptic
+            feedback.
+          </li>
+
+          <li>
+            Evaluated usability, comfort, and accuracy through structured user
+            testing using noise-canceling conditions and participant interviews.
+          </li>
+
+          <li>
+            Analyzed limitations involving wearability, battery life, and hardware
+            constraints and proposed future improvements including AI-driven
+            prioritization of sound events.
+          </li>
+        </ul>
+
+        <div class="tags">
+          <span class="tag">Human-Computer Interaction</span>
+          <span class="tag">Assistive Technology</span>
+          <span class="tag">Wearable Systems</span>
+          <span class="tag">Arduino</span>
+          <span class="tag">Embedded Systems</span>
+          <span class="tag">User Research</span>
+          <span class="tag">Accessibility</span>
+        </div>
+      </article>
 
 
+      <!-- NYC Taxi -->
       <article class="projectCard">
-  <div class="projectTop">
-    <h2 class="projectTitle">NYC Yellow Taxi Trips: EDA + Statistical Testing</h2>
-    <div class="projectLinks">
-      <a href="https://github.com/sayeenaresh/CMSC320-Final-Project/tree/main" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </div>
+        <div class="projectTop">
+          <h2 class="projectTitle">
+            NYC Yellow Taxi Trips: EDA + Statistical Testing
+          </h2>
 
-  <ul class="projectDesc">
-    <li>Analyzed ~3.0M NYC Yellow Taxi trips (Jan 2024) to understand how trip volume, distance, and fares vary by time of day and day of week.</li>
-    <li>Performed data curation and preprocessing in pandas (type inspection, missing-value analysis, and row filtering) to create a clean, reproducible analysis dataset.</li>
-    <li>Built exploratory visualizations (daily and hourly trip trends; weekday/hour distributions) to surface usage patterns and guide follow-up analysis.</li>
-    <li>Tested whether trip distance differs by weekday using one-way ANOVA and followed up with Tukey HSD pairwise comparisons after filtering distance outliers.</li>
-    <li>Evaluated fare-related hypotheses including average fare by hour and fare differences by payment type (two-sample t-test), and summarized insights with clear plots and narrative explanations.</li>
-  </ul>
+          <div class="projectLinks">
+            <a
+              href="https://github.com/sayeenaresh/CMSC320-Final-Project/tree/main"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
 
-  <div class="tags">
-    <span class="tag">Python</span>
-    <span class="tag">Pandas</span>
-    <span class="tag">Matplotlib</span>
-    <span class="tag">Seaborn</span>
-    <span class="tag">Statistical Testing</span>
-    <span class="tag">ANOVA</span>
-    <span class="tag">Tukey HSD</span>
-    <span class="tag">Hypothesis Testing</span>
-    <span class="tag">Data Visualization</span>
-  </div>
-</article>
+        <ul class="projectDesc">
+          <li>
+            Analyzed approximately 3 million NYC Yellow Taxi trips from January
+            2024 to investigate how trip volume, distance, and fares vary by time
+            of day and day of week.
+          </li>
 
-<article class="projectCard">
-  <div class="projectTop">
-    <h2 class="projectTitle">Iniquity+ Compiler Extensions: Arity, Rest Args, case-lambda, apply</h2>
-    <div class="projectLinks">
-      <a href="https://github.com/sayeenaresh/Iniquity-Compiler-Extensions-Arity-Rest-Args-case-lambda-apply" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </div>
+          <li>
+            Performed data curation and preprocessing in pandas, including type
+            inspection, missing-value analysis, filtering, and outlier handling.
+          </li>
 
-  <ul class="projectDesc">
-    <li>Extended a Racket-based compiler for a small functional language (Iniquity+) by implementing runtime arity checking for function calls, ensuring mismatched argument counts reliably signal errors.</li>
-    <li>Added support for rest-argument (variable arity) functions by generating code to pop extra stack arguments and construct a proper list bound to the rest parameter.</li>
-    <li>Implemented case-lambda-style multi-arity dispatch, selecting the correct clause at runtime based on the number of provided arguments (including mixed plain/rest clauses).</li>
-    <li>Built the apply form, compiling calls that take a list argument and push its runtime elements onto the stack before invoking the function, with error handling for non-list inputs.</li>
-    <li>Validated correctness using targeted interpreter-guided test programs covering arity mismatch, rest/list construction order, dispatch edge cases, and apply behavior.</li>
-  </ul>
+          <li>
+            Created exploratory visualizations showing daily and hourly trip
+            trends and weekday/hour distributions.
+          </li>
 
-  <div class="tags">
-    <span class="tag">Racket</span>
-    <span class="tag">Compilers</span>
-    <span class="tag">Code Generation</span>
-    <span class="tag">Runtime Systems</span>
-    <span class="tag">Stack Discipline</span>
-    <span class="tag">Programming Languages</span>
-    <span class="tag">Interpreter-guided testing</span>
-  </div>
-</article>
+          <li>
+            Tested whether trip distance differed by weekday using one-way ANOVA
+            followed by Tukey HSD pairwise comparisons.
+          </li>
 
-<p class="heroCTA">
-  → Explore my <a href="https://github.com/sayeenaresh"><strong>GitHub</strong></a> to check out my other projects.
-</p>
+          <li>
+            Evaluated fare-related hypotheses including average fare by hour and
+            fare differences across payment types using statistical hypothesis
+            testing.
+          </li>
+        </ul>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Matplotlib</span>
+          <span class="tag">Seaborn</span>
+          <span class="tag">Statistical Testing</span>
+          <span class="tag">ANOVA</span>
+          <span class="tag">Tukey HSD</span>
+          <span class="tag">Hypothesis Testing</span>
+          <span class="tag">Data Visualization</span>
+        </div>
+      </article>
+
+
+      <!-- Compiler -->
+      <article class="projectCard">
+        <div class="projectTop">
+          <h2 class="projectTitle">
+            Iniquity+ Compiler Extensions: Arity, Rest Args, case-lambda, apply
+          </h2>
+
+          <div class="projectLinks">
+            <a
+              href="https://github.com/sayeenaresh/Iniquity-Compiler-Extensions-Arity-Rest-Args-case-lambda-apply"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <ul class="projectDesc">
+          <li>
+            Extended a Racket-based compiler for a small functional language,
+            Iniquity+, by implementing runtime arity checking for function calls.
+          </li>
+
+          <li>
+            Added support for rest-argument functions by generating code to collect
+            additional stack arguments into a proper list bound to the rest parameter.
+          </li>
+
+          <li>
+            Implemented case-lambda-style multi-arity dispatch to select function
+            clauses at runtime based on the number of provided arguments.
+          </li>
+
+          <li>
+            Built the apply form, compiling calls that consume a runtime list and
+            push its elements onto the stack before invoking the target function.
+          </li>
+
+          <li>
+            Validated behavior using targeted interpreter-guided tests covering
+            arity mismatches, list construction, dispatch edge cases, and apply.
+          </li>
+        </ul>
+
+        <div class="tags">
+          <span class="tag">Racket</span>
+          <span class="tag">Compilers</span>
+          <span class="tag">Code Generation</span>
+          <span class="tag">Runtime Systems</span>
+          <span class="tag">Stack Discipline</span>
+          <span class="tag">Programming Languages</span>
+          <span class="tag">Testing</span>
+        </div>
+      </article>
+
+
+      <p class="heroCTA">
+        → Explore my
+        <a href="https://github.com/sayeenaresh">
+          <strong>GitHub</strong>
+        </a>
+        to check out my other projects.
+      </p>
 
     </section>
   </main>
 
   <footer class="footer">
     <div class="wrap footer__inner">
-      <p class="muted">© <span id="year"></span> Sayee Sanjana Naresh Kumar Gopal Babu</p>
+      <p class="muted">
+        © <span id="year"></span> Sayee Sanjana Naresh Kumar Gopal Babu
+      </p>
     </div>
   </footer>
 
